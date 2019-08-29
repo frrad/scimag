@@ -1,4 +1,4 @@
-all: sqldb.sqlite
+all: index.csv
 
 scimag.sql.gz:
 	aria2c -c "http://gen.lib.rus.ec/dbdumps/scimag.sql.gz" -x 5
