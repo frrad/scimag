@@ -1,3 +1,5 @@
+.PHONY: clean
+
 all: index.csv
 
 scimag.sql.gz:
@@ -8,3 +10,6 @@ sqldb.sqlite: scimag.sql.gz
 
 index.csv: sqldb.sqlite
 	sqlite3 sqldb.sqlite < create_dump.sql
+
+clean:
+	rm -f scimag.sql.gz sqldb.sqlite
