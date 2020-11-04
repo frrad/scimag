@@ -15,4 +15,4 @@ index.csv.xz: index.csv
 	pv index.csv | xz --block-size=100KiB -T 0 > index.csv.xz
 
 clean:
-	rm -f scimag.sql.gz sqldb.sqlite index.csv
+	rm -f scimag.sql.gz sqldb.sqlite index.csv index.csv.xz
