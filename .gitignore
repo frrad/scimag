@@ -1,5 +1,6 @@
 index.csv
 scimag.sql.gz
+*.rar
 sqldb.sqlite
 /index.csv.xz
 /scimag.sql.gz.aria2
